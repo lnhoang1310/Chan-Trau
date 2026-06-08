@@ -1,0 +1,2 @@
+source D:/Code/ESPIDF/chan_trau/chan_trau_slave/build/gdbinit/symbols
+source D:/Code/ESPIDF/chan_trau/chan_trau_slave/build/gdbinit/connect

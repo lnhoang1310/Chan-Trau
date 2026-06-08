@@ -1,0 +1,2 @@
+source D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/gdbinit/symbols
+source D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/gdbinit/connect
