@@ -159,9 +159,12 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/touch_element/libtouch_
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/usb/libusb.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/json/libjson.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/main/libmain.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/liblora_ra01h.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi/libwifi.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/libsim.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/libblynk.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/libsim.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi/libwifi.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/liblora_ra01h.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/main/libmain.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/libblynk.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi/libwifi.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/liblora_ra01h.a

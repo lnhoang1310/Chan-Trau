@@ -5,6 +5,9 @@
 #include "soc/gpio_struct.h"
 #include "driver/gpio.h"
 #include <string.h>
+#include "esp_log.h"
+
+#define TAG "LORA"
 
 /*
  * Register definitions
@@ -62,12 +65,11 @@
 #define PA_OUTPUT_RFO_PIN 0
 #define PA_OUTPUT_PA_BOOST_PIN 1
 
-#define CONFIG_CS_GPIO 18
-#define CONFIG_RST_GPIO 14
-#define CONFIG_MISO_GPIO 19
-#define CONFIG_MOSI_GPIO 27
-#define CONFIG_IRQ_GPIO 26
-#define CONFIG_SCK_GPIO 5
+#define CONFIG_CS_GPIO GPIO_NUM_32
+#define CONFIG_RST_GPIO GPIO_NUM_20
+#define CONFIG_MISO_GPIO GPIO_NUM_19
+#define CONFIG_MOSI_GPIO GPIO_NUM_21
+#define CONFIG_SCK_GPIO GPIO_NUM_18
 
 #define TIMEOUT_RESET 100
 
@@ -343,7 +345,7 @@ int lora_init(void)
     assert(ret == ESP_OK);
 
     spi_device_interface_config_t dev = {
-        .clock_speed_hz = 9000000,
+        .clock_speed_hz = 000000,
         .mode = 0,
         .spics_io_num = -1,
         .queue_size = 1,
@@ -365,6 +367,7 @@ int lora_init(void)
     while (i++ < TIMEOUT_RESET)
     {
         version = lora_read_reg(REG_VERSION);
+        ESP_LOGI(TAG, "%02X", version);
         if (version == 0x12)
             break;
         vTaskDelay(2);

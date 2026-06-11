@@ -564,12 +564,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/main/cmake_install.cmake")
+  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/cmake_install.cmake")
+  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -579,11 +579,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/cmake_install.cmake")
+  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/cmake_install.cmake")
+  include("D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/main/cmake_install.cmake")
 endif()
 

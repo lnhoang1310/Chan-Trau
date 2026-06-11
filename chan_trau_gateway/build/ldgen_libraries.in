@@ -159,9 +159,12 @@ $<TARGET_FILE:idf::touch_element>
 $<TARGET_FILE:idf::usb>
 $<TARGET_FILE:idf::wifi_provisioning>
 $<TARGET_FILE:__idf_json>
-$<TARGET_FILE:idf::main>
-$<TARGET_FILE:idf::lora_ra01h>
-$<TARGET_FILE:idf::wifi>
 $<TARGET_FILE:idf::sim>
 $<TARGET_FILE:idf::blynk>
 $<TARGET_FILE:__idf_sim>
+$<TARGET_FILE:idf::wifi>
+$<TARGET_FILE:idf::lora_ra01h>
+$<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_blynk>
+$<TARGET_FILE:__idf_wifi>
+$<TARGET_FILE:__idf_lora_ra01h>
