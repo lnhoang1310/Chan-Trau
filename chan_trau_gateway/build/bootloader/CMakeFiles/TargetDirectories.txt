@@ -11,9 +11,6 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/bootloade
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/size.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/size-files.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/size-components.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/dfu.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/dfu-list.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/dfu-flash.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/uf2.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/uf2-app.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/CMakeFiles/edit_cache.dir
@@ -63,10 +60,8 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_system/C
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/edit_cache.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/edit_cache.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/rebuild_cache.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/edit_cache.dir
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/rebuild_cache.dir
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.dir
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir

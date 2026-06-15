@@ -9,8 +9,8 @@
 #include "esp_log.h"
 
 #define SIM_UART UART_NUM_1
-#define SIM_TX_PIN GPIO_NUM_48
-#define SIM_RX_PIN GPIO_NUM_47
+#define SIM_TX_PIN GPIO_NUM_5
+#define SIM_RX_PIN GPIO_NUM_4
 
 #define RX_BUF_SIZE 4096
 #define EVENT_QUEUE_LEN 20

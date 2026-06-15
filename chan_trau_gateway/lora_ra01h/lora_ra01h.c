@@ -66,9 +66,9 @@
 #define PA_OUTPUT_PA_BOOST_PIN 1
 
 #define CONFIG_CS_GPIO GPIO_NUM_32
-#define CONFIG_RST_GPIO GPIO_NUM_20
+#define CONFIG_RST_GPIO GPIO_NUM_23
 #define CONFIG_MISO_GPIO GPIO_NUM_19
-#define CONFIG_MOSI_GPIO GPIO_NUM_21
+#define CONFIG_MOSI_GPIO GPIO_NUM_22
 #define CONFIG_SCK_GPIO GPIO_NUM_18
 
 #define TIMEOUT_RESET 100
@@ -345,7 +345,7 @@ int lora_init(void)
     assert(ret == ESP_OK);
 
     spi_device_interface_config_t dev = {
-        .clock_speed_hz = 000000,
+        .clock_speed_hz = 2000000,
         .mode = 0,
         .spics_io_num = -1,
         .queue_size = 1,

@@ -23,7 +23,6 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_uart/libesp_
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_mm/libesp_mm.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/vfs/libvfs.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_vfs_console/libesp_vfs_console.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/mbedtls/mbedtls/library/libmbedtls.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/mbedtls/mbedtls/library/libmbedx509.a
@@ -36,7 +35,6 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_partition/libesp_pa
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/app_update/libapp_update.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_app_format/libesp_app_format.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_mm/libesp_mm.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/driver/libdriver.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a
@@ -47,8 +45,9 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_i2s/libesp_d
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sdmmc/libsdmmc.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_dac/libesp_driver_dac.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
@@ -78,6 +77,7 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/app_update/libapp_updat
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_partition/libesp_partition.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/efuse/libefuse.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/bootloader_support/libbootloader_support.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_mm/libesp_mm.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/spi_flash/libspi_flash.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_system/libesp_system.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_common/libesp_common.a
@@ -99,7 +99,6 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/app_trace/libapp_trace.
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_event/libesp_event.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/nvs_flash/libnvs_flash.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_phy/libesp_phy.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_vfs_console/libesp_vfs_console.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lwip/liblwip.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_netif/libesp_netif.a
@@ -118,8 +117,9 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_i2s/libesp_d
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sdmmc/libsdmmc.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_dac/libesp_driver_dac.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
@@ -155,8 +155,6 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/nvs_sec_provider/libnvs
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/perfmon/libperfmon.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/rt/librt.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/spiffs/libspiffs.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/touch_element/libtouch_element.a
-D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/usb/libusb.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/json/libjson.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/libsim.a
@@ -164,7 +162,9 @@ D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/libblynk.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/sim/libsim.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi/libwifi.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/liblora_ra01h.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/gps/libgps.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/main/libmain.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/blynk/libblynk.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/wifi/libwifi.a
 D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/lora_ra01h/liblora_ra01h.a
+D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build/esp-idf/gps/libgps.a

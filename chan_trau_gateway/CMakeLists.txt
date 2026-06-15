@@ -3,5 +3,5 @@
 cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-set(EXTRA_COMPONENT_DIRS lora_ra01h wifi sim blynk)
+set(EXTRA_COMPONENT_DIRS lora_ra01h wifi sim blynk gps)
 project(chan_trau_gateway)
