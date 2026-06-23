@@ -1,0 +1,343 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM18 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\chan_trau_gateway.elf D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM18'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+==================================================
+GATEWAY BOOT
+==================================================
+Firmware: IoT Livestock Gateway ESP32
+Serial Baudrate: 115200
+
+==================================================
+PHYSICAL INIT
+==================================================
+GPS UART Init: OK
+SIM UART Init: OK
+SIM AT Link: OK
+LoRa SPI Init: OK
+LoRa Radio Init: OK
+LoRa: Đang trong chế độ Lắng nghe (RX Mode)
+
+==================================================
+MODULE SIGNAL STATUS
+==================================================
+GPS: Chưa nhận được dữ liệu NMEA
+SIM: Đã đăng ký mạng 4G - CSQ=24
+LoRa: Đang trong chế độ Lắng nghe (RX Mode)
+
+==================================================
+POST CYCLE
+==================================================
+POST: SKIP - Gateway GPS chưa có Fix hợp lệ
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+
+==================================================
+MODULE SIGNAL STATUS
+==================================================
+GPS: Đang tìm vệ tinh...
+SIM: Đã đăng ký mạng 4G - CSQ=24
+LoRa: Đang trong chế độ Lắng nghe (RX Mode)
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+
+==================================================
+MODULE SIGNAL STATUS
+==================================================
+GPS: Đang tìm vệ tinh...
+SIM: Đã đăng ký mạng 4G - CSQ=24
+LoRa: Đang trong chế độ Lắng nghe (RX Mode)
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25
+[RAW GPS] $GNGGA,,,,,,0,00,25.5,,,,,,*64
+[RAW GPS] $GNGLL,,,,,,V,N*7A
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01
+[RAW GPS] $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[RAW GPS] $GPGSV,1,1,00,0*65
+[RAW GPS] $BDGSV,1,1,00,0*74
+[RAW GPS] $GNRMC,,V,,,,,,,,,,N,V*37
+[RAW GPS] $GNVTG,,,,,,,,,N*2E
+[RAW GPS] $GNZDA,,,,,,*56
+[RAW GPS] $GPTXT,01,01,01,ANTENNA OPEN*25

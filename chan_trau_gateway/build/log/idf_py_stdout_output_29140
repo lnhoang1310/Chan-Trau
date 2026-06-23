@@ -1,0 +1,969 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM18 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\chan_trau_gateway.elf D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM18'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 15 2026 21:05:37[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae18h ( 44568) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001ae40 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d240 vaddr=40080000 size=02dd8h ( 11736) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=162b4h ( 90804) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=000362dc vaddr=40082dd8 size=0b224h ( 45604) load[0m
+[0;32mI (164) esp_image: segment 5: paddr=00041508 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (182) cpu_start: Multicore app[0m
+[0;32mI (190) cpu_start: Pro cpu start user code[0m
+[0;32mI (190) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (190) app_init: Application information:[0m
+[0;32mI (190) app_init: Project name:     chan_trau_gateway[0m
+[0;32mI (195) app_init: App version:      1d08a8d-dirty[0m
+[0;32mI (200) app_init: Compile time:     Jun 16 2026 11:16:33[0m
+[0;32mI (205) app_init: ELF file SHA256:  c818a0f6d...[0m
+[0;32mI (209) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (231) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2CD8 len 0002D328 (180 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 4008E000 len 00012000 (72 KiB): IRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (264) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (397) GPS: RAW: :9I5�,V,,,,,,,,,,N,V*37[0m
+[0;32mI (397) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (1217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (1217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (1227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (1347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (1347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (1347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (1347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (1347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (1357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (1397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (1397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (2217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (2217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (2227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (2347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (2347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (2347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (2347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (2347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (2357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (2397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (2397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (3217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (3217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (3227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (3347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (3347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (3347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (3347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (3347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (3357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (3397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (3397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (4217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (4217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (4227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (4347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (4347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (4347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (4347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (4347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (4357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (4397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (4397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (5217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (5217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (5227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (5347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (5347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (5347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (5347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (5347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (5357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (5397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (5397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (6217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (6217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (6227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (6347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (6347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (6347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (6347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (6347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (6357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (6397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (6397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (7217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (7217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (7227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (7347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (7347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (7347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (7347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (7347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (7357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (7397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (7397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (8217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (8217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (8227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (8347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (8347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (8347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (8347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (8347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (8357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (8397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (8397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (9217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (9217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (9227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (9347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (9347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (9347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (9347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (9347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (9357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (9397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (9397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (10217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (10217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (10227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (10347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (10347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (10347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (10347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (10347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (10357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (10397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (10397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (11217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (11217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (11227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (11347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (11347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (11347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (11347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (11347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (11357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (11397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (11397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (12217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (12217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (12227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (12347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (12347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (12347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (12347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (12347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (12357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (12397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (12397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (13217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (13217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (13227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (13347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (13347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (13347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (13347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (13347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (13357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (13397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (13397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (14217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (14217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (14227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (14347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (14347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (14347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (14347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (14347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (14357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (14397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (14397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (15217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (15217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (15227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (15347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (15347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (15347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (15347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (15347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (15357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (15397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (15397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (16217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (16217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (16227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (16347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (16347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (16347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (16347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (16347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (16357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (16397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (16397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (17217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (17217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (17227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (17347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (17347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (17347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (17347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (17347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (17357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (17397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (17397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (18217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (18217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (18217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (18347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (18347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (18347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (18347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (18347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (18357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (18397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (18397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (19217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (19217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (19217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (19347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (19347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (19347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (19347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (19347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (19357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (19397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (19397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (20217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (20217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (20217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (20347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (20347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (20347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (20347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (20347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (20357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (20397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (20397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (21217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (21217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (21217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (21347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (21347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (21347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (21347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (21347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (21357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (21397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (21397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (22217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (22217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (22217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (22347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (22347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (22347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (22347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (22347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (22357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (22397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (22397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (23217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (23217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (23217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (23347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (23347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (23347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (23347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (23347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (23357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (23397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (23397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (24217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (24217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (24217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (24347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (24347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (24347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (24347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (24347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (24357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (24397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (24397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (25217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (25217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (25217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (25347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (25347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (25347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (25347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (25347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (25357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (25397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (25397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (26217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (26217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (26217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (26347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (26347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (26347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (26347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (26347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (26357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (26397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (26397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (27217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (27217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (27227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (27347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (27347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (27347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (27347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (27347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (27357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (27397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (27397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (28217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (28217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (28227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (28347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (28347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (28347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (28347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (28347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (28357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (28397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (28397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (29217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (29217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (29217) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (29347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (29347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (29347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (29347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (29347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (29357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (29397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (29397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (30217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (30217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (30227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (30347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (30347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (30347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (30347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (30347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (30357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (30397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (30397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (31217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (31217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (31227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (31347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (31347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (31347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (31347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (31347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (31357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (31397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (31397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (32217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (32217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (32227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (32347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (32347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (32347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (32347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (32347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (32357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (32397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (32397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (33217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (33217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (33227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (33347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (33347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (33347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (33347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (33347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (33357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (33397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (33397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (34217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (34217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (34227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (34347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (34347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (34347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (34347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (34347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (34357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (34397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (34397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (35217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (35217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (35227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (35347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (35347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (35347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (35347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (35347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (35357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (35397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (35397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (36217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (36217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (36227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (36347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (36347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (36347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (36347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (36347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (36357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (36397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (36397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (37217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (37217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (37227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (37347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (37347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (37347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (37347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (37347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (37357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (37397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (37397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (38217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (38217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (38227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (38347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (38347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (38347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (38347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (38347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (38357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (38397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (38397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (39217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (39217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (39227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (39347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (39347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (39347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (39347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (39347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (39357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (39397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (39397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (40217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (40217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (40227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (40347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (40347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (40347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (40347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (40347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (40357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (40397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (40397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (41217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (41217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (41227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (41347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (41347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (41347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (41347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (41347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (41357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (41397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (41397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (42217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (42217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (42227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (42347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (42347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (42347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (42347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (42347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (42357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (42397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (42397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (43217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (43217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (43227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (43347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (43347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (43347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (43347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (43347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (43357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (43397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (43397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (44217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (44217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (44227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (44347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (44347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (44347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (44347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (44347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (44357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (44397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (44397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (45217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (45217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (45227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (45347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (45347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (45347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (45347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (45347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (45357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (45397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (45397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (46217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (46217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (46227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (46347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (46347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (46347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (46347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (46347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (46357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (46397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (46397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (47217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (47217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (47227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (47347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (47347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (47347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (47347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (47347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (47357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (47397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (47397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (48217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (48217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (48227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (48347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (48347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (48347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (48347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (48347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (48357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (48397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (48397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (49217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (49217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (49227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (49347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (49347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (49347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (49347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (49347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (49357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (49397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (49397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (50217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (50217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (50227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (50347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (50347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (50347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (50347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (50347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (50357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (50397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (50397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (51217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (51217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (51227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (51347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (51347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (51347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (51347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (51347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (51357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (51397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (51397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (52217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (52217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (52227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (52347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (52347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (52347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (52347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (52347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (52357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (52397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (52397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (53217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (53217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (53227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (53347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (53347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (53347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (53347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (53347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (53357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (53397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (53397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (54217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (54217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (54227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (54347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (54347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (54347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (54347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (54347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (54357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (54397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (54397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (55217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (55217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (55227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (55347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (55347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (55347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (55347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (55347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (55357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (55397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (55397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (56217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (56217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (56227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (56347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (56347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (56347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (56347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (56347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (56357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (56397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (56397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (57217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (57217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (57227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (57347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (57347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (57347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (57347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (57347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (57357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (57397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (57397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (58217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (58217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (58227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (58347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (58347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (58347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (58347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (58347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (58357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (58397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (58397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (59217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (59217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (59227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (59347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (59347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (59347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (59347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (59347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (59357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (59397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (59397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (60217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (60227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (60227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (60347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (60347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (60347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (60347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (60347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (60357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (60397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (60397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (61217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (61227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (61227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (61347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (61347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (61347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (61347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (61357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (61357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (61397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (61397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (62217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (62227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (62227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (62347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (62347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (62347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (62347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (62357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (62357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (62397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (62397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (63217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (63227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (63227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (63347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (63347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (63347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (63347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (63347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (63357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (63397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (63397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (64217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (64227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (64227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (64347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (64347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (64347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (64347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (64357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (64357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (64397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (64397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (65217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (65227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (65227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (65347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (65347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (65347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (65347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (65357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (65357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (65397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (65397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (66217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (66227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (66227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (66347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (66347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (66347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (66347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (66357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (66357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (66397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (66397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (67217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (67227) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (67227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (67347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (67347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (67347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (67347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (67357) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (67357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (67397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (67397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (68217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (68217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (68227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (68347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (68347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (68347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (68347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (68347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (68357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (68397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (68397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (69217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (69217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (69227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (69347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (69347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (69347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (69347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (69347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (69357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (69397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (69397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (70217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (70217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (70227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (70347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (70347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (70347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (70347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (70347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (70357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (70397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (70397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (71217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (71217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (71227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (71347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (71347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (71347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (71347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (71347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (71357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (71397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (71397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (72217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (72217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (72227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (72347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (72347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (72347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (72347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (72347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (72357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (72397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (72397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (73217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (73217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (73227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (73347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (73347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (73347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (73347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (73347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (73357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (73397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (73397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (74217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (74217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (74227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (74347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (74347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (74347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (74347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (74347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (74357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (74397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (74397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (75217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (75217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (75227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (75347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (75347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (75347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (75347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (75347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (75357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (75397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (75397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (76217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (76217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (76227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (76347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (76347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (76347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (76347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (76347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (76357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (76397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (76397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (77217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (77217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (77227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (77347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (77347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (77347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (77347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (77347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (77357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (77397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (77397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (78217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (78217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (78227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (78347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (78347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (78347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (78347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (78347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (78357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (78397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (78397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (79217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (79217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (79227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (79347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (79347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (79347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (79347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (79347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (79357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (79397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (79397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (80217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (80217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (80227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (80347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (80347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (80347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (80347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (80347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (80357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (80397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (80397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (81217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (81217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (81227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+I (81347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04
+[0;32mI (81347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (81347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (81347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (81347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (81357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (81397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (81397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (82217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (82217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (82227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m
+[0;32mI (82347) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,4*04[0m
+[0;32mI (82347) GPS: RAW: $GPGSV,1,1,00,0*65[0m
+[0;32mI (82347) GPS: RAW: $BDGSV,1,1,00,0*74[0m
+[0;32mI (82347) GPS: RAW: $GNRMC,,V,,,,,,,,,,N,V*37[0m
+[0;32mI (82347) GPS: Latitude: 0.000000 ,, Longitude: 0.000000 ,[0m
+[0;32mI (82357) GPS: RAW: $GNVTG,,,,,,,,,N*2E[0m
+[0;32mI (82397) GPS: RAW: $GNZDA,,,,,,*56[0m
+[0;32mI (82397) GPS: RAW: $GPTXT,01,01,01,ANTENNA OPEN*25[0m
+[0;32mI (83217) GPS: RAW: $GNGGA,,,,,,0,00,25.5,,,,,,*64[0m
+[0;32mI (83217) GPS: RAW: $GNGLL,,,,,,V,N*7A[0m
+[0;32mI (83227) GPS: RAW: $GNGSA,A,1,,,,,,,,,,,,,25.5,25.5,25.5,1*01[0m

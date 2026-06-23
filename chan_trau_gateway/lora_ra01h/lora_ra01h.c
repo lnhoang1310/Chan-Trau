@@ -439,6 +439,7 @@ int lora_receive_packet(uint8_t *buf, int size)
     /*
      * Find packet size.
      */
+    ESP_LOGI(TAG, "IRQ: %02X", irq);
     if (__implicit)
         len = lora_read_reg(REG_PAYLOAD_LENGTH);
     else

@@ -1,0 +1,573 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\chan_trau_gateway.elf D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 15 2026 21:05:37[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b850h ( 47184) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001b878 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001dde0 vaddr=40080000 size=02238h (  8760) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16cd4h ( 93396) map[0m
+[0;32mI (147) esp_image: segment 4: paddr=00036cfc vaddr=40082238 size=0caach ( 51884) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=000437b0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (175) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (194) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     chan_trau_gateway[0m
+[0;32mI (199) app_init: App version:      1d08a8d-dirty[0m
+[0;32mI (204) app_init: Compile time:     Jun 16 2026 11:16:33[0m
+[0;32mI (209) app_init: ELF file SHA256:  0b9f0b2e8...[0m
+[0;32mI (213) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2E60 len 0002D1A0 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008ECE4 len 0001131C (68 KiB): IRAM[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (265) spi_flash: flash io: dio[0m
+[0;33mW (268) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (1301) LORA: 12[0m
+[0;32mI (1341) MAIN: Send OK[0m
+
+[0;32mI (2381) MAIN: Send OK[0m
+
+[0;32mI (3421) MAIN: Send OK[0m
+
+[0;32mI (4461) MAIN: Send OK[0m
+
+[0;32mI (5501) MAIN: Send OK[0m
+
+[0;32mI (6541) MAIN: Send OK[0m
+
+[0;32mI (7581) MAIN: Send OK[0m
+
+[0;32mI (8621) MAIN: Send OK[0m
+
+[0;32mI (9661) MAIN: Send OK[0m
+
+[0;32mI (10701) MAIN: Send OK[0m
+
+[0;32mI (11741) MAIN: Send OK[0m
+
+[0;32mI (12781) MAIN: Send OK[0m
+
+[0;32mI (13821) MAIN: Send OK[0m
+
+[0;32mI (14861) MAIN: Send OK[0m
+
+[0;32mI (15901) MAIN: Send OK[0m
+
+[0;32mI (16941) MAIN: Send OK[0m
+
+[0;32mI (17981) MAIN: Send OK[0m
+
+[0;32mI (19021) MAIN: Send OK[0m
+
+[0;32mI (20061) MAIN: Send OK[0m
+
+[0;32mI (21101) MAIN: Send OK[0m
+
+[0;32mI (22141) MAIN: Send OK[0m
+
+[0;32mI (23181) MAIN: Send OK[0m
+
+[0;32mI (24221) MAIN: Send OK[0m
+
+[0;32mI (25261) MAIN: Send OK[0m
+
+[0;32mI (26301) MAIN: Send OK[0m
+
+[0;32mI (27341) MAIN: Send OK[0m
+
+[0;32mI (28381) MAIN: Send OK[0m
+
+[0;32mI (29421) MAIN: Send OK[0m
+
+[0;32mI (30461) MAIN: Send OK[0m
+
+[0;32mI (31501) MAIN: Send OK[0m
+
+[0;32mI (32541) MAIN: Send OK[0m
+
+[0;32mI (33581) MAIN: Send OK[0m
+
+[0;32mI (34621) MAIN: Send OK[0m
+
+[0;32mI (35661) MAIN: Send OK[0m
+
+[0;32mI (36701) MAIN: Send OK[0m
+
+[0;32mI (37741) MAIN: Send OK[0m
+
+[0;32mI (38781) MAIN: Send OK[0m
+
+[0;32mI (39821) MAIN: Send OK[0m
+
+[0;32mI (40861) MAIN: Send OK[0m
+
+[0;32mI (41901) MAIN: Send OK[0m
+
+[0;32mI (42941) MAIN: Send OK[0m
+
+[0;32mI (43981) MAIN: Send OK[0m
+
+[0;32mI (45021) MAIN: Send OK[0m
+
+[0;32mI (46061) MAIN: Send OK[0m
+
+[0;32mI (47101) MAIN: Send OK[0m
+
+[0;32mI (48141) MAIN: Send OK[0m
+
+[0;32mI (49181) MAIN: Send OK[0m
+
+[0;32mI (50221) MAIN: Send OK[0m
+
+[0;32mI (51261) MAIN: Send OK[0m
+
+[0;32mI (52301) MAIN: Send OK[0m
+
+[0;32mI (53341) MAIN: Send OK[0m
+
+[0;32mI (54381) MAIN: Send OK[0m
+
+[0;32mI (55421) MAIN: Send OK[0m
+
+[0;32mI (56461) MAIN: Send OK[0m
+
+[0;32mI (57501) MAIN: Send OK[0m
+
+[0;32mI (58541) MAIN: Send OK[0m
+
+[0;32mI (59581) MAIN: Send OK[0m
+
+[0;32mI (60621) MAIN: Send OK[0m
+
+[0;32mI (61661) MAIN: Send OK[0m
+
+[0;32mI (62701) MAIN: Send OK[0m
+
+[0;32mI (63741) MAIN: Send OK[0m
+
+[0;32mI (64781) MAIN: Send OK[0m
+
+[0;32mI (65821) MAIN: Send OK[0m
+
+[0;32mI (66861) MAIN: Send OK[0m
+
+[0;32mI (67901) MAIN: Send OK[0m
+
+[0;32mI (68941) MAIN: Send OK[0m
+
+[0;32mI (69981) MAIN: Send OK[0m
+
+[0;32mI (71021) MAIN: Send OK[0m
+
+[0;32mI (72061) MAIN: Send OK[0m
+
+[0;32mI (73101) MAIN: Send OK[0m
+
+[0;32mI (74141) MAIN: Send OK[0m
+
+[0;32mI (75181) MAIN: Send OK[0m
+
+[0;32mI (76221) MAIN: Send OK[0m
+
+[0;32mI (77261) MAIN: Send OK[0m
+
+[0;32mI (78301) MAIN: Send OK[0m
+
+[0;32mI (79341) MAIN: Send OK[0m
+
+[0;32mI (80381) MAIN: Send OK[0m
+
+[0;32mI (81421) MAIN: Send OK[0m
+
+[0;32mI (82461) MAIN: Send OK[0m
+
+[0;32mI (83501) MAIN: Send OK[0m
+
+[0;32mI (84541) MAIN: Send OK[0m
+
+[0;32mI (85581) MAIN: Send OK[0m
+
+[0;32mI (86621) MAIN: Send OK[0m
+
+[0;32mI (87661) MAIN: Send OK[0m
+
+[0;32mI (88701) MAIN: Send OK[0m
+
+[0;32mI (89741) MAIN: Send OK[0m
+
+[0;32mI (90781) MAIN: Send OK[0m
+
+[0;32mI (91821) MAIN: Send OK[0m
+
+[0;32mI (92861) MAIN: Send OK[0m
+
+[0;32mI (93901) MAIN: Send OK[0m
+
+[0;32mI (94941) MAIN: Send OK[0m
+
+[0;32mI (95981) MAIN: Send OK[0m
+
+[0;32mI (97021) MAIN: Send OK[0m
+
+[0;32mI (98061) MAIN: Send OK[0m
+
+[0;32mI (99101) MAIN: Send OK[0m
+
+[0;32mI (100141) MAIN: Send OK[0m
+
+[0;32mI (101181) MAIN: Send OK[0m
+
+[0;32mI (102221) MAIN: Send OK[0m
+
+[0;32mI (103261) MAIN: Send OK[0m
+
+[0;32mI (104301) MAIN: Send OK[0m
+
+[0;32mI (105341) MAIN: Send OK[0m
+
+[0;32mI (106381) MAIN: Send OK[0m
+
+[0;32mI (107421) MAIN: Send OK[0m
+
+[0;32mI (108461) MAIN: Send OK[0m
+
+[0;32mI (109501) MAIN: Send OK[0m
+
+[0;32mI (110541) MAIN: Send OK[0m
+
+[0;32mI (111581) MAIN: Send OK[0m
+
+[0;32mI (112621) MAIN: Send OK[0m
+
+[0;32mI (113661) MAIN: Send OK[0m
+
+[0;32mI (114701) MAIN: Send OK[0m
+
+[0;32mI (115741) MAIN: Send OK[0m
+
+[0;32mI (116781) MAIN: Send OK[0m
+
+[0;32mI (117821) MAIN: Send OK[0m
+
+[0;32mI (118861) MAIN: Send OK[0m
+
+[0;32mI (119901) MAIN: Send OK[0m
+
+[0;32mI (120941) MAIN: Send OK[0m
+
+[0;32mI (121981) MAIN: Send OK[0m
+
+[0;32mI (123021) MAIN: Send OK[0m
+
+[0;32mI (124061) MAIN: Send OK[0m
+
+[0;32mI (125101) MAIN: Send OK[0m
+
+[0;32mI (126141) MAIN: Send OK[0m
+
+[0;32mI (127181) MAIN: Send OK[0m
+
+[0;32mI (128221) MAIN: Send OK[0m
+
+[0;32mI (129261) MAIN: Send OK[0m
+
+[0;32mI (130301) MAIN: Send OK[0m
+
+[0;32mI (131341) MAIN: Send OK[0m
+
+[0;32mI (132381) MAIN: Send OK[0m
+
+[0;32mI (133421) MAIN: Send OK[0m
+
+[0;32mI (134461) MAIN: Send OK[0m
+
+[0;32mI (135501) MAIN: Send OK[0m
+
+[0;32mI (136541) MAIN: Send OK[0m
+
+[0;32mI (137581) MAIN: Send OK[0m
+
+[0;32mI (138621) MAIN: Send OK[0m
+
+[0;32mI (139661) MAIN: Send OK[0m
+
+[0;32mI (140701) MAIN: Send OK[0m
+
+[0;32mI (141741) MAIN: Send OK[0m
+
+[0;32mI (142781) MAIN: Send OK[0m
+
+[0;32mI (143821) MAIN: Send OK[0m
+
+[0;32mI (144861) MAIN: Send OK[0m
+
+[0;32mI (145901) MAIN: Send OK[0m
+
+[0;32mI (146941) MAIN: Send OK[0m
+
+[0;32mI (147981) MAIN: Send OK[0m
+
+[0;32mI (149021) MAIN: Send OK[0m
+
+[0;32mI (150061) MAIN: Send OK[0m
+
+[0;32mI (151101) MAIN: Send OK[0m
+
+[0;32mI (152141) MAIN: Send OK[0m
+
+[0;32mI (153181) MAIN: Send OK[0m
+
+[0;32mI (154221) MAIN: Send OK[0m
+
+[0;32mI (155261) MAIN: Send OK[0m
+
+[0;32mI (156301) MAIN: Send OK[0m
+
+[0;32mI (157341) MAIN: Send OK[0m
+
+[0;32mI (158381) MAIN: Send OK[0m
+
+[0;32mI (159421) MAIN: Send OK[0m
+
+[0;32mI (160461) MAIN: Send OK[0m
+
+[0;32mI (161501) MAIN: Send OK[0m
+
+[0;32mI (162541) MAIN: Send OK[0m
+
+[0;32mI (163581) MAIN: Send OK[0m
+
+[0;32mI (164621) MAIN: Send OK[0m
+
+[0;32mI (165661) MAIN: Send OK[0m
+
+[0;32mI (166701) MAIN: Send OK[0m
+
+[0;32mI (167741) MAIN: Send OK[0m
+
+[0;32mI (168781) MAIN: Send OK[0m
+
+[0;32mI (169821) MAIN: Send OK[0m
+
+[0;32mI (170861) MAIN: Send OK[0m
+
+[0;32mI (171901) MAIN: Send OK[0m
+
+[0;32mI (172941) MAIN: Send OK[0m
+
+[0;32mI (173981) MAIN: Send OK[0m
+
+[0;32mI (175021) MAIN: Send OK[0m
+
+[0;32mI (176061) MAIN: Send OK[0m
+
+[0;32mI (177101) MAIN: Send OK[0m
+
+[0;32mI (178141) MAIN: Send OK[0m
+
+[0;32mI (179181) MAIN: Send OK[0m
+
+[0;32mI (180221) MAIN: Send OK[0m
+
+[0;32mI (181261) MAIN: Send OK[0m
+
+[0;32mI (182301) MAIN: Send OK[0m
+
+[0;32mI (183341) MAIN: Send OK[0m
+
+[0;32mI (184381) MAIN: Send OK[0m
+
+[0;32mI (185421) MAIN: Send OK[0m
+
+[0;32mI (186461) MAIN: Send OK[0m
+
+[0;32mI (187501) MAIN: Send OK[0m
+
+[0;32mI (188541) MAIN: Send OK[0m
+
+[0;32mI (189581) MAIN: Send OK[0m
+
+[0;32mI (190621) MAIN: Send OK[0m
+
+[0;32mI (191661) MAIN: Send OK[0m
+
+[0;32mI (192701) MAIN: Send OK[0m
+
+[0;32mI (193741) MAIN: Send OK[0m
+
+[0;32mI (194781) MAIN: Send OK[0m
+
+[0;32mI (195821) MAIN: Send OK[0m
+
+[0;32mI (196861) MAIN: Send OK[0m
+
+[0;32mI (197901) MAIN: Send OK[0m
+
+[0;32mI (198941) MAIN: Send OK[0m
+
+[0;32mI (199981) MAIN: Send OK[0m
+
+[0;32mI (201021) MAIN: Send OK[0m
+
+[0;32mI (202061) MAIN: Send OK[0m
+
+[0;32mI (203101) MAIN: Send OK[0m
+
+[0;32mI (204141) MAIN: Send OK[0m
+
+[0;32mI (205181) MAIN: Send OK[0m
+
+[0;32mI (206221) MAIN: Send OK[0m
+
+[0;32mI (207261) MAIN: Send OK[0m
+
+[0;32mI (208301) MAIN: Send OK[0m
+
+[0;32mI (209341) MAIN: Send OK[0m
+
+[0;32mI (210381) MAIN: Send OK[0m
+
+[0;32mI (211421) MAIN: Send OK[0m
+
+[0;32mI (212461) MAIN: Send OK[0m
+
+[0;32mI (213501) MAIN: Send OK[0m
+
+[0;32mI (214541) MAIN: Send OK[0m
+
+[0;32mI (215581) MAIN: Send OK[0m
+
+[0;32mI (216621) MAIN: Send OK[0m
+
+[0;32mI (217661) MAIN: Send OK[0m
+
+[0;32mI (218701) MAIN: Send OK[0m
+
+[0;32mI (219741) MAIN: Send OK[0m
+
+[0;32mI (220781) MAIN: Send OK[0m
+
+[0;32mI (221821) MAIN: Send OK[0m
+
+[0;32mI (222861) MAIN: Send OK[0m
+
+[0;32mI (223901) MAIN: Send OK[0m
+
+[0;32mI (224941) MAIN: Send OK[0m
+
+[0;32mI (225981) MAIN: Send OK[0m
+
+[0;32mI (227021) MAIN: Send OK[0m
+
+[0;32mI (228061) MAIN: Send OK[0m
+
+[0;32mI (229101) MAIN: Send OK[0m
+
+[0;32mI (230141) MAIN: Send OK[0m
+
+[0;32mI (231181) MAIN: Send OK[0m
+
+[0;32mI (232221) MAIN: Send OK[0m
+
+[0;32mI (233261) MAIN: Send OK[0m
+
+[0;32mI (234301) MAIN: Send OK[0m
+
+[0;32mI (235341) MAIN: Send OK[0m
+
+[0;32mI (236381) MAIN: Send OK[0m
+
+[0;32mI (237421) MAIN: Send OK[0m
+
+[0;32mI (238461) MAIN: Send OK[0m
+
+[0;32mI (239501) MAIN: Send OK[0m
+
+[0;32mI (240541) MAIN: Send OK[0m
+
+[0;32mI (241581) MAIN: Send OK[0m
+
+[0;32mI (242621) MAIN: Send OK[0m
+
+[0;32mI (243661) MAIN: Send OK[0m
+
+[0;32mI (244701) MAIN: Send OK[0m
+
+[0;32mI (245741) MAIN: Send OK[0m
+
+[0;32mI (246781) MAIN: Send OK[0m
+
+[0;32mI (247821) MAIN: Send OK[0m
+
+[0;32mI (248861) MAIN: Send OK[0m
+
+[0;32mI (249901) MAIN: Send OK[0m
+
+[0;32mI (250941) MAIN: Send OK[0m
+
+[0;32mI (251981) MAIN: Send OK[0m
+
+[0;32mI (253021) MAIN: Send OK[0m
+
+[0;32mI (254061) MAIN: Send OK[0m
+
+[0;32mI (255101) MAIN: Send OK[0m
+
+[0;32mI (256141) MAIN: Send OK[0m
+
+[0;32mI (257181) MAIN: Send OK[0m
+
+[0;32mI (258221) MAIN: Send OK[0m
+
+[0;32mI (259261) MAIN: Send OK[0m
+
+[0;32mI (260301) MAIN: Send OK[0m
+
+[0;32mI (261341) MAIN: Send OK[0m
+
+[0;32mI (262381) MAIN: Send OK[0m
+
+[0;32mI (263421) MAIN: Send OK[0m
+
+[0;32mI (264461) MAIN: Send OK[0m
+
+[0;32mI (265501) MAIN: Send OK[0m
+
+[0;32mI (266541) MAIN: Send OK[0m
+
