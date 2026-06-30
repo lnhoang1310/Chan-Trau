@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "chan_trau_gateway",
-    "project_version":    "1d08a8d-dirty",
+    "project_version":    "1a2ff2b-dirty",
     "project_path":       "D:/Code/ESPIDF/chan_trau/chan_trau_gateway",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.1",
     "build_dir":          "D:/Code/ESPIDF/chan_trau/chan_trau_gateway/build",

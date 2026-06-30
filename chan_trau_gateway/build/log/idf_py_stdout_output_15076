@@ -1,0 +1,66 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM19 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\chan_trau_gateway.elf D:\Code\ESPIDF\chan_trau\chan_trau_gateway\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM19'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4876
+ho 0 tail 12 room 4
+load:0x40078000,len:16560
+load:0x40080400,len:3500
+entry 0x400805b4
+[001211 ms] BOOT: Slave firmware start
+[001214 ms] INFO: Project = Dairy cow GPS collar LoRa slave
+[001220 ms] INFO: Mode = DEMO_ALWAYS_AWAKE_NO_DEEP_SLEEP
+[001225 ms] INFO: ENABLE_DEEP_SLEEP = 0
+[001228 ms] INFO: No SIM, no HTTP, no Wi-Fi data path in slave firmware
+[001235 ms] INFO: ESP32 MAC = AC:15:18:ED:D9:34
+[001239 ms] STATE_CHANGE: BOOT -> INIT_MODULES, reason=BOOT_DONE
+[001245 ms] INIT: LoRa init...
+[001271 ms] INIT_OK: LoRa ready, freq=868000000 Hz, SF=7, BW=125000 Hz, CR=4/5, syncWord=0x12, crc=1, txPower=17 dBm
+[001281 ms] INIT: GPS init...
+[001284 ms] INIT_OK: GPS UART ready, uart=2, baud=9600, rxGPIO=16, txGPIO=17
+[001291 ms] INIT: Battery monitor...
+[001294 ms] INIT_WARN: Battery ADC disabled by hardware; demo battery fixed at 9%
+[001301 ms] READY: Enter main cycle
+[001305 ms] STATE_CHANGE: INIT_MODULES -> READ_NOW, reason=START_CYCLE
+[001311 ms] GPS: quick_read elapsed=0s/2s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[002322 ms] GPS: quick_read elapsed=1s/2s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[003333 ms] GPS: no valid fix in quick read
+[003337 ms] STATE_CHANGE: READ_NOW -> WAIT_GPS_UP_TO_60S, reason=DATA_NOT_VALID
+[003344 ms] GPS_WAIT: waiting fix elapsed=0s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[004405 ms] GPS_WAIT: waiting fix elapsed=1s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[005417 ms] GPS_WAIT: waiting fix elapsed=2s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[006429 ms] GPS_WAIT: waiting fix elapsed=3s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[007441 ms] GPS_WAIT: waiting fix elapsed=4s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[008453 ms] GPS_WAIT: waiting fix elapsed=5s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[009465 ms] GPS_WAIT: waiting fix elapsed=6s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[010477 ms] GPS_WAIT: waiting fix elapsed=7s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[011489 ms] GPS_WAIT: waiting fix elapsed=8s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[012501 ms] GPS_WAIT: waiting fix elapsed=9s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[013513 ms] GPS_WAIT: waiting fix elapsed=10s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[014525 ms] GPS_WAIT: waiting fix elapsed=11s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[015537 ms] GPS_WAIT: waiting fix elapsed=12s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[016549 ms] GPS_WAIT: waiting fix elapsed=13s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[017561 ms] GPS_WAIT: waiting fix elapsed=14s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[018573 ms] GPS_WAIT: waiting fix elapsed=15s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[019585 ms] GPS_WAIT: waiting fix elapsed=16s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[020597 ms] GPS_WAIT: waiting fix elapsed=17s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[021609 ms] GPS_WAIT: waiting fix elapsed=18s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[022621 ms] GPS_WAIT: waiting fix elapsed=19s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[023633 ms] GPS_WAIT: waiting fix elapsed=20s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[024645 ms] GPS_WAIT: waiting fix elapsed=21s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[025657 ms] GPS_WAIT: waiting fix elapsed=22s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[026669 ms] GPS_WAIT: waiting fix elapsed=23s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[027681 ms] GPS_WAIT: waiting fix elapsed=24s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[028693 ms] GPS_WAIT: waiting fix elapsed=25s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[029705 ms] GPS_WAIT: waiting fix elapsed=26s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[030717 ms] GPS_WAIT: waiting fix elapsed=27s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[031729 ms] GPS_WAIT: waiting fix elapsed=28s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[032741 ms] GPS_WAIT: waiting fix elapsed=29s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[033753 ms] GPS_WAIT: waiting fix elapsed=30s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[034765 ms] GPS_WAIT: waiting fix elapsed=31s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[035777 ms] GPS_WAIT: waiting fix elapsed=32s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[036789 ms] GPS_WAIT: waiting fix elapsed=33s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
+[037801 ms] GPS_WAIT: waiting fix elapsed=34s/60s, lastNmeaAge=-1ms, fix=0, latValid=0, lngValid=0, sats=0, hdop=-1.0, lastSentence=NONE
